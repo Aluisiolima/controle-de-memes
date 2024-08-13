@@ -10,15 +10,21 @@ function main(page){
     })
     .then(data => {
         view.innerHTML = data;
-        
+        geraTelas(page);
     })
     .catch(error => {
         console.error("not fund:" ,error);
         view.innerHTML = "NOT fund componete";
     })
-    return page
+
 }
 //lista profissoria 
-lista = [["./audio/eu tentei.mp3","","eu tentei"]]
+const lista = [["./audio/eu tentei.mp3","./img/chico-moedas.jpg","eu tentei"]];
 document.addEventListener("DOMContentLoaded", main("home"));
 
+function play() {
+    const audio = document.getElementById('audio');
+    const musicFile = this.getAttribute('meme');
+    audio.src = musicFile;
+    audio.play();
+}

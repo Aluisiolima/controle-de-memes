@@ -20,8 +20,8 @@ function geraCards(list){
         const name = list[i][2];
         
         cards += `
-            <div class="card" meme="${src}">
-                <img src="${img}">
+            <div class="card" meme="${src}" style=" background-image: url(${img});">
+    
                 <p>${name}</p>
             </div>
         `

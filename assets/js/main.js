@@ -18,8 +18,15 @@ function main(page){
     })
 
 }
-//lista profissoria 
-const lista = [["./audio/eu tentei.mp3","./img/chico-moedas.jpg","eu tentei"]];
+//array de dados profissorio depois vem do banco 
+const lista = [
+    ["./audio/eu tentei.mp3","./img/chico-moedas.jpg","eu tentei"],
+    ["./audio/meme do adm.mp3","./img/image-file.png","adm"],
+    ["./audio/petinha pt.mp3","./img/image-file.png","tata"],
+    ["./audio/ué não entendi esse final.mp3","./img/images.jpeg","caracol"],
+    ["./audio/vou nada.mp3","./img/image-file.png","tata"]
+];
+
 document.addEventListener("DOMContentLoaded", main("home"));
 
 function play() {

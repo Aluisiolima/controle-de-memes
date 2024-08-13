@@ -16,7 +16,7 @@ function main(page){
         console.error("not fund:" ,error);
         view.innerHTML = "NOT fund componete";
     })
-    geraTelas(page);
+    return page
 }
 //lista profissoria 
 lista = [["./audio/eu tentei.mp3","","eu tentei"]]

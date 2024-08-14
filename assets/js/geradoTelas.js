@@ -21,8 +21,10 @@ function geraCards(list){
         
         cards += `
             <div class="card" meme="${src}" style=" background-image: url(${img});">
-    
                 <p>${name}</p>
+                <div class="like">
+                    <i class="bi bi-heart" id="likes"></i>    
+                </div>
             </div>
         `
     }

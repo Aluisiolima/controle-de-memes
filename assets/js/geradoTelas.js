@@ -1,11 +1,16 @@
 
 function geraTelas(page){
+    const home = document.getElementById('home');
+    const adicionar = document.getElementById('adicionar');
+    const perfil = document.getElementById('perfil');
     if(page === "home"){
+        home.style.textDecoration = "underline";
         geraCards(lista);
-  
-    }else if(page === "perfil"){
+    }
+    if(page === "perfil"){
 
-    }else {
+    }
+    if(page === "adicionar"){
 
     }
 }

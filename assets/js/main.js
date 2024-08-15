@@ -35,3 +35,14 @@ function play() {
     audio.src = musicFile;
     audio.play();
 }
+
+document.getElementById('menu').addEventListener('click', function() {
+    const menu = document.getElementById('menu-inf');
+    if (menu.classList.contains('hidden')) {
+        menu.classList.remove('hidden');
+        menu.classList.add('show');
+    } else {
+        menu.classList.remove('show');
+        menu.classList.add('hidden');
+    }
+});

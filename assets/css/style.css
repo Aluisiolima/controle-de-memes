@@ -1,9 +1,14 @@
 .page{
     background: #D8F4F8;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
 }
 .cabecario{
-    margin-bottom: .1em;
+    width: 100%;
+    height: 2em;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
 }
 .menu{
     background: transparent;
@@ -12,6 +17,29 @@
 }
 .menu > i{
     font-weight:bold ;
+}
+.navegacoa{
+    position: fixed;
+    height: 100vh;
+    width: 50%;
+    color: white;
+    background: #D8F4F8;
+    z-index: 2;
+    transform: translateX(100%);
+    transition: transform 1s linear;
+}
+.hidden {
+    display: none;
+}
+
+.show {
+    transform: translateX(0);
+}
+.link{
+    font-size: 2em;
+    margin: .9em;
+    list-style: none;
+    text-shadow: 2px 3px 2px #000000;
 }
 .home{
     display: grid;

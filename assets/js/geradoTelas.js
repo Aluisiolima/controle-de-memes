@@ -3,15 +3,22 @@ function geraTelas(page){
     const home = document.getElementById('home');
     const adicionar = document.getElementById('adicionar');
     const perfil = document.getElementById('perfil');
+
     if(page === "home"){
         home.style.textDecoration = "underline";
+        perfil.style.textDecoration = "none";
+        adicionar.style.textDecoration = "none";
         geraCards(lista);
     }
     if(page === "perfil"){
-
+        home.style.textDecoration = "none";
+        perfil.style.textDecoration = "underline";
+        adicionar.style.textDecoration = "none";
     }
     if(page === "adicionar"){
-
+        home.style.textDecoration = "none";
+        perfil.style.textDecoration = "none";
+        adicionar.style.textDecoration = "underline";
     }
 }
 

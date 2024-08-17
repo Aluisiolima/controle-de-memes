@@ -10,7 +10,7 @@
     height: 2em;
     position: fixed;
     top: 0;
-    z-index: 9999;
+
 }
 
 .link{
@@ -32,6 +32,7 @@
 }
 .view{
     padding-top: 2.5em;
+    min-height: 100vh;
 }
 @media (min-width:768px) {
     .home{

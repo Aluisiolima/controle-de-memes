@@ -36,12 +36,17 @@ function play() {
     audio.play();
 }
 
-document.getElementById('menu').addEventListener('click', function() {
+
+
+function menuBar() {
     const menu = document.getElementById('menu-inf');
-    if (menu.classList.contains('hidden')) {
-        menu.classList.remove('hidden');
-        menu.classList.add('show');
-    } else {
+
+    menu.classList.remove('hidden');
+    menu.classList.add('show');
+}
+document.getElementById('view').addEventListener('click', (event) => {
+    const menu = document.getElementById('menu-inf');
+    if(event.target){
         menu.classList.remove('show');
         menu.classList.add('hidden');
     }

@@ -27,7 +27,7 @@ const lista = [
     ["./audio/vou nada.mp3","./img/image-file.png","tata"]
 ];
 
-document.addEventListener("DOMContentLoaded", main("home"));
+document.addEventListener("DOMContentLoaded", main("adicionar"));
 
 function play() {
     const audio = document.getElementById('audio');

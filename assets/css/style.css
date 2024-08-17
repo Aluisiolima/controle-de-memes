@@ -12,33 +12,9 @@
     top: 0;
     z-index: 9999;
 }
-.menu{
-    background: transparent;
-    border:none;
-    font-size: 2em;
-}
-.menu > i{
-    font-weight:bold ;
-}
-.navegacoa{
-    position: fixed;
-    height: 100vh;
-    width: 50%;
-    color: white;
-    background: #D8F4F8;
-    z-index: 2;
-    transform: translateX(100%);
-    transition: transform 1s linear;
-}
-.hidden {
-    display: none;
-}
 
-.show {
-    transform: translateX(0);
-}
 .link{
-    font-size: 2em;
+    font-size: 1.5em;
     margin: .9em;
     list-style: none;
     text-shadow: 2px 3px 2px #000000;
@@ -56,80 +32,6 @@
 }
 .view{
     padding-top: 2.5em;
-}
-.home{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: .5em;
-    width: 80%;
-    margin: 0 auto;
-}
-.card{
-    width: 100%;
-    height: 9em;
-    position: relative;
-    border-radius: .3em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.card > img{
-    max-width: 100%;
-    height: 10em;
-    position: absolute;
-
-}
-.card > p {
-    font-size: 1.5em;
-    color: white;
-    text-shadow: 3px 3px 3px #000000;
-}
-.like{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    color: red ;
-    font-size: 1.5em;
-}
-.like:active{
-    background-color: red;
-}
-.perfil{
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.conta{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.ft{
-    width: 2.5em;
-    padding: .5em;
-    height: 2.5em;
-    border-radius: 50%;
-    background-color:#92DCE7;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 5pc;
-}
-.name{
-    margin: .3em;
-    padding: .6em;
-    border-radius: .5em;
-    color: wheat;
-    background: #92DCE7;
-    text-shadow: 1px 1px 3px #000000;
 }
 @media (min-width:768px) {
     .home{

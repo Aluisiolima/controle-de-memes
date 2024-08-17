@@ -1,0 +1,25 @@
+.menu{
+    background: transparent;
+    border:none;
+    font-size: 2em;
+}
+.menu > i{
+    font-weight:bold ;
+}
+.navegacoa{
+    position: fixed;
+    height: 100vh;
+    width: 50%;
+    color: white;
+    background: #D8F4F8;
+    z-index: 2;
+    transform: translateX(100%);
+    transition: transform 1s linear;
+}
+.hidden {
+    display: none;
+}
+
+.show {
+    transform: translateX(0);
+}

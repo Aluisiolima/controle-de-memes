@@ -8,18 +8,30 @@
 }
 .navegacoa{
     position: fixed;
+    display: none;
     height: 100vh;
     width: 50%;
     color: white;
     background: #D8F4F8;
     z-index: 2;
-    transform: translateX(100%);
-    transition: transform 1s linear;
-}
-.hidden {
-    display: none;
+    opacity: 0;
+    animation: abrirJanela .2s linear forwards;
 }
 
-.show {
-    transform: translateX(0);
+@keyframes abrirJanela {
+0% {
+    width: 10%;
+    height: 100px;
+    opacity: 0;
+}
+50% {
+    width: 25%;
+    height: 200px;
+    opacity: 0.5;
+}
+100% {
+    width: 50%;
+    height: 100vh;
+    opacity: 1;
+}
 }

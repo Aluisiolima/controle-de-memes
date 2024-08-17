@@ -27,7 +27,7 @@ const lista = [
     ["./audio/vou nada.mp3","./img/image-file.png","tata"]
 ];
 
-document.addEventListener("DOMContentLoaded", main("adicionar"));
+document.addEventListener("DOMContentLoaded", main("home"));
 
 function play() {
     const audio = document.getElementById('audio');
@@ -39,15 +39,11 @@ function play() {
 
 
 function menuBar() {
-    const menu = document.getElementById('menu-inf');
-
-    menu.classList.remove('hidden');
-    menu.classList.add('show');
+    const menu = document.getElementById('menu-inf').style.display = "block";
 }
 document.getElementById('view').addEventListener('click', (event) => {
     const menu = document.getElementById('menu-inf');
     if(event.target){
-        menu.classList.remove('show');
-        menu.classList.add('hidden');
+        menu.style.display = "none";
     }
 });

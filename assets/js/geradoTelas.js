@@ -14,11 +14,13 @@ function geraTelas(page){
         home.style.textDecoration = "none";
         perfil.style.textDecoration = "underline";
         adicionar.style.textDecoration = "none";
+        const login = document.getElementById("login").style.display = "none";
     }
     if(page === "adicionar"){
         home.style.textDecoration = "none";
         perfil.style.textDecoration = "none";
         adicionar.style.textDecoration = "underline";
+        
     }
 }
 
